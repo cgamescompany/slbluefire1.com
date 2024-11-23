@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Layout</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #eaeaea;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 20px;
+    }
+    .box {
+      background-color: #fff;
+      padding: 20px;
+      margin: 10px;
+      width: 30%;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .box h2 {
+      color: #333;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: relative;
+      width: 100%;
+    }
+
+    /* Media Queries for responsiveness */
+    @media (max-width: 768px) {
+      .box {
+        width: 45%;
+      }
+    }
+    @media (max-width: 480px) {
+      .box {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Responsive Design Example</h1>
+  </header>
+
+  <div class="container">
+    <div class="box">
+      <h2>Box 1</h2>
+      <p>This is an example of a responsive layout using Flexbox. The layout adjusts automatically based on screen size.</p>
+    </div>
+    <div class="box">
+      <h2>Box 2</h2>
+      <p>This layout is responsive and will stack the boxes on smaller screens.</p>
+    </div>
+    <div class="box">
+      <h2>Box 3</h2>
+      <p>The Flexbox layout ensures the boxes are displayed in rows on wider screens and stack vertically on smaller screens.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Responsive Layout. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
